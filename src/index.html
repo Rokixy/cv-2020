@@ -116,7 +116,7 @@
     }
 
     .projects>ol>li {
-      margin-bottom: 24px;
+      margin-bottom: 20px;
     }
 
     .projects>ol>li>header {
@@ -135,12 +135,7 @@
 
       width: 500px;
       height: 270px;
-    }
-
-    @media print {
-      #skills {
-        display: none;
-      }
+      display: none;
     }
 
 
@@ -150,7 +145,7 @@
     }
 
     .skills>.wrapper>:first-child {
-      margin-right: 24px;
+      margin-right: 20px;
     }
 
     .skills>.wrapper>#skills {}
@@ -182,7 +177,7 @@
     .openSource>ul {}
 
     .openSource>ul>li {
-      margin-bottom: 24px;
+      margin-bottom: 16px;
     }
 
     .openSource header {
@@ -201,13 +196,17 @@
     .jobs>ol {}
 
     .jobs>ol>li {
-      margin: 12px 0;
+      margin: 10px 0;
+    }
+
+    .jobs>ol>li>ul>li {
+      margin: 8px 0;
     }
 
     .jobs header {
       display: flex;
       color: #666;
-      margin-bottom: 12px;
+      margin-bottom: 10px;
     }
 
     .jobs header>h3 {
@@ -272,7 +271,7 @@
         <img src="./images/1inch.jpg" alt="" height="130%">
       </div>
       <p>
-        男 | 25岁 | 前端开发工程师 | 上海
+        男 | 25岁 | 前端开发工程师 | 大连海事大学 本科 (2015 ~ 2019)
       </p>
       <p>
         手机：13591004905 | 微信：13591004905 | 邮箱：zzubillzzu@126.com
@@ -286,21 +285,18 @@
           <header>
             <h3>宅UI</h3>
             <span>
-              <a href="#">源码链接</a>
-              <a href="#">项目预览</a>
+              <a href="https://github.com/Rokixy/ZhaiUI">源码链接</a>
+              <a href="https://rokixy.github.io/ZhaiUI/">项目预览</a>
             </span>
           </header>
           <p>
             一款基于 <strong>Vue</strong> 的 UI 框架。
-
           </p>
           <p>
-            主要组件有日期选择器、弹出框、<strong>下拉更新</strong>、树形选择器等。
-
+            含有按钮、标签、输入框、网格等8个常用组件。
           </p>
           <p>
-            已被公司前端同事广泛使用，有效提高前端团队的开发效率。
-
+            使用 karma + mocha + chai 进行单元测试。
           </p>
           <p>
             制作过程让我对 Vue 和单元测试有了新的认识。
@@ -310,7 +306,7 @@
           <header>
             <h3>旺财记账</h3>
             <span>
-              <a href="#">源码链接</a>
+              <a href="https://github.com/Rokixy/booking">源码链接</a>
               <a href="#">项目预览</a>
             </span>
           </header>
@@ -319,22 +315,23 @@
           </p>
 
           <p>
-            这是我从自己的需求出发，设计出的极简记账应用，特点是快速记账，
+            这是我从自己的需求出发，设计出的极简记账应用，特点是快速记账。
+          </p>
+          <p>
+            在项目中熟悉了TypeScript的基础语法，以及Class风格的Vue组件编写方式。
+          </p>
+          <p>
+            使用LocalStorage实现了应用数据的本地存储功能。
           </p>
         </li>
       </ol>
     </section>
-
-
-
-
 
     <section class="skills">
       <h2>技能</h2>
       <div class="wrapper">
         <div id="skills"></div>
         <ul>
-          <li>熟悉页面制作技巧，能将设计稿<strong>完美还原</strong> </li>
           <li>熟悉<strong>前后端分离</strong>技术，包括 AJAX、跨域、前端路由、Cookie、Session 等</li>
           <li>熟练掌握 <strong>Vue全家桶</strong>的使用，包括 VueCli、VueRouter、Vuex 等</li>
           <li>熟悉 ES6，包括 let / Promise / await / 析构赋值</li>
@@ -343,8 +340,6 @@
         </ul>
       </div>
     </section>
-
-
 
     <section class="openSource">
       <h2>开源项目</h2>
@@ -379,8 +374,6 @@
       </ul>
     </section>
 
-
-
     <section class="jobs">
       <h2>工作经历</h2>
       <ol>
@@ -392,25 +385,20 @@
           </header>
           <ul>
             <li>
-
+              根据业务流程，对公司内部网站进行新模块的开发与测试。（前端使用Vue，后端使用Django）
             </li>
             <li>
-              负责打印机中间件开发、单元测试、文档撰写，确保测试<strong>覆盖率达到 90%</strong> 以上
+              独立负责打印机网页模块的开发和测试工作。(前端使用Jquery，后端使用C++)
             </li>
             <li>
-              作为前端骨干，负责给前端较弱的同事进行培训，提高其前端开发工作效率
+              负责中间件开发、单元测试、文档撰写，确保测试覆盖率达到 90% 以上。
+            </li>
+            <li>
+              作为前端骨干，负责给前端较弱的同事进行培训，提高其前端开发工作效率。
             </li>
           </ul>
         </li>
       </ol>
-    </section>
-
-    <section class="education">
-      <h2>教育经历</h2>
-      <p>
-        <span><time>2015年</time>~<time>2019年</time></span>
-        大连海事大学 轮机工程学院 本科
-      </p>
     </section>
 
   </article>
